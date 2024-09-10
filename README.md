@@ -29,3 +29,11 @@ I chose [`Portunus`](https://github.com/majewsky/portunus) because OpenLDAP is t
 Other options considered were:
 * `glauth`
 * `kanidm`
+
+```
+openssl genpkey -algorithm EC -pkeyopt ec_paramgen_curve:secp521r1 -out key.pem
+# 中身の確認は以下のコマンド
+openssl ec -text -noout -in key.pem
+# 自己署名証明書なので，CSRの生成はすっ飛ばして証明書を出力
+openssl req -new -x509 -days 365 -key key.pem -sha512 -out serv.crt -subj "/C=JP/ST=Tokyo/L=Tachikawa/CN=localhost" -addext "subjectAltName=DNS:localhost,IP:192.168.10.25"
+```

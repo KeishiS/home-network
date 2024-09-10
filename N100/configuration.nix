@@ -34,4 +34,8 @@
             StreamLocalBindUnlink yes
         '';
     };
+
+    environment.systemPackages = with pkgs; [
+        openssl
+    ];
 }

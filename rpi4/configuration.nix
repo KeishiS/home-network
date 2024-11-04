@@ -5,6 +5,7 @@
         ./hardware-configuration.nix
         ./nginx.nix
         ./ldap.nix
+        ./et.nix
     ];
     nixpkgs.hostPlatform = lib.mkDefault "aarch64-linux";
 

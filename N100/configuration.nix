@@ -26,7 +26,7 @@
         };
     };
 
-    networking.hostName = "nixos-sandi-N100";
+    networking.hostName = "NixOS-sandi-N100";
 
     services.openssh = {
         extraConfig = ''

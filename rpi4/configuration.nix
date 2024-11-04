@@ -5,6 +5,7 @@
         ./hardware-configuration.nix
         ./nginx.nix
         ./ldap.nix
+        ./eternal-terminal.nix
     ];
     nixpkgs.hostPlatform = lib.mkDefault "aarch64-linux";
 
@@ -33,7 +34,7 @@
         };
     };
 
-    networking.hostName = "nixos-sandi-raspi4";
+    networking.hostName = "NixOS-sandi-raspi4";
 
     environment.systemPackages = with pkgs; [
         libraspberrypi

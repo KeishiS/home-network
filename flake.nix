@@ -31,9 +31,9 @@
                 ];
             };
 
-            nixos-sandi-lenovo = {
+            NixOS-sandi-lenovo = {
                 deployment = {
-                    targetHost = "nixos-sandi-lenovo";
+                    targetHost = "NixOS-sandi-lenovo";
                     targetUser = "sandi";
                     buildOnTarget = true;
                 };
@@ -44,9 +44,9 @@
                 ];
             };
 
-            nixos-sandi-N100 = {
+            NixOS-sandi-N100 = {
                 deployment = {
-                    targetHost = "nixos-sandi-N100";
+                    targetHost = "NixOS-sandi-N100";
                     targetUser = "sandi";
                     buildOnTarget = true;
                 };
@@ -57,9 +57,9 @@
                 ];
             };
 
-            nixos-sandi-rpi4 = {
+            NixOS-sandi-rpi4 = {
                 deployment = {
-                    targetHost = "nixos-sandi-rpi4";
+                    targetHost = "NixOS-sandi-rpi4";
                     targetUser = "sandi";
                     buildOnTarget = true;
                 };
